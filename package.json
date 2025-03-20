@@ -1,0 +1,22 @@
+{
+  "name": "cypress_rs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "headedMode": "npx cypress run --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.2.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  },
+   "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/e2e/step_definitions/"
+  }
+}
